@@ -283,10 +283,6 @@ export default async function processFiles(
   const element = ev.target;
 
   for (const file of element.files) {
-    if (benches.benches.length + newBenches.length >= 12) {
-      break;
-    }
-
     const fileName = file.name;
 
     if (fileName.endsWith(".csv")) {
